@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Archive and Deletion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="test.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Assessment Archive and Deletion</h1>
+
+        <!-- Archive Assessment -->
+        <div class="section">
+            <h2>Archive Assessment</h2>
+            <label for="archiveSelect">Select Assessment to Archive:</label>
+            <select id="archiveSelect">
+                <!-- Options will be populated dynamically -->
+                <option value="assessment1">Assessment 1</option>
+                <option value="assessment2">Assessment 2</option>
+                <!-- More options -->
+            </select>
+            <button id="archiveButton">Archive Assessment</button>
+        </div>
+
+        <!-- Deletion Warning -->
+        <div class="section">
+            <h2>Deletion Warning</h2>
+            <p class="warning-text">Warning: Deleting an assessment will permanently remove it and all associated data. This action cannot be undone.</p>
+            <label for="deletionSelect">Select Assessment to Delete:</label>
+            <select id="deletionSelect">
+                <!-- Options will be populated dynamically -->
+                <option value="assessment1">Assessment 1</option>
+                <option value="assessment2">Assessment 2</option>
+                <!-- More options -->
+            </select>
+            <input type="text" id="deletionConfirm" placeholder="Type assessment title to confirm">
+            <button id="deleteButton">Delete Assessment</button>
+        </div>
+
+        <!-- Restore Archived Assessment -->
+        <div class="section">
+            <h2>Restore Archived Assessment</h2>
+            <label for="restoreSelect">Select Archived Assessment to Restore:</label>
+            <select id="restoreSelect">
+                <!-- Options will be populated dynamically -->
+                <option value="archivedAssessment1">Archived Assessment 1</option>
+                <option value="archivedAssessment2">Archived Assessment 2</option>
+                <!-- More options -->
+            </select>
+            <button id="restoreButton">Restore Assessment</button>
+        </div>
+
+        <!-- Export Assessment Data -->
+        <div class="section">
+            <h2>Export Assessment Data</h2>
+            <label for="exportSelect">Select Assessment to Export Data:</label>
+            <select id="exportSelect">
+                <!-- Options will be populated dynamically -->
+                <option value="assessment1">Assessment 1</option>
+                <option value="assessment2">Assessment 2</option>
+                <!-- More options -->
+            </select>
+            <button id="exportButton">Export Data</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

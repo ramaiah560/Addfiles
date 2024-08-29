@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Taking Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="test.js"></script>
+</head>
+<body>
+    <div class="assessment-taking-page">
+        <header>
+            <h1 id="assessment-title">Assessment Title</h1>
+            <p id="assessment-instructions">Instructions for the assessment go here.</p>
+        </header>
+
+        <div id="timer" class="timer-display">
+            <h2>Time Remaining</h2>
+            <p id="timer-countdown">--:--:--</p>
+        </div>
+
+        <div id="question-navigation" class="question-navigation">
+            <h2>Questions</h2>
+            <ul id="question-list">
+                <!-- Question navigation will be dynamically populated here -->
+            </ul>
+        </div>
+
+        <div id="question-display" class="question-display">
+            <!-- Current question will be dynamically populated here -->
+        </div>
+
+        <div class="answer-input">
+            <!-- Answer input fields will be dynamically populated here -->
+        </div>
+
+        <div class="buttons">
+            <button id="save-progress" class="action-button">Save Progress</button>
+            <button id="submit-assessment" class="action-button">Submit Assessment</button>
+        </div>
+
+        <div id="feedback-display" class="feedback-display">
+            <!-- Feedback will be dynamically populated here -->
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
